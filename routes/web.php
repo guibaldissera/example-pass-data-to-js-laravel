@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
+
+	JavaScript::put([
+        'name' => 'Peter John',
+        'age' => 22,
+        'suns' => ([
+        	['name' => 'Sophia'],
+        	['name' => 'Peter Jr'],
+        ]), 
+    ]);
+
     return view('welcome');
 });
